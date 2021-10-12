@@ -1,0 +1,118 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+}
+
+@font-face {
+    font-family: 'red-hat';
+    src: url("fonts/RedHatDisplay-Regular.ttf") format("truetype");
+}
+
+body {
+    background: var(--pale-blue)  url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+
+    font-size: 16px;
+    font-family: red-hat, serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    background: white;
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 20px;
+}
+
+#main > img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 20px 20px 0 0;
+}
+
+#info {
+    padding: 1rem 3rem 2.5rem;
+}
+
+#info > h1, #info > p {
+    text-align: center;
+}
+
+#info p {
+    color: var(--desaturated-blue);
+}
+
+#info h1 {
+    color: var(--dark-blue);
+}
+
+#plan-box {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 1rem 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#payment-button {
+    text-align: center;
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 10px;
+    padding: 0.8rem 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    box-shadow: 0 16px 10px 2px var(--pale-blue);
+    transition: all 0.2s ease-out;
+}
+
+#payment-button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+#cancel {
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-out;
+}
+
+#cancel:hover {
+    color: var(--dark-blue);
+}
+
+#price {
+    margin-left: 1rem;
+    line-height: 0.2rem;
+}
+
+#price h4 {
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+#change-button {
+    color: var(--bright-blue);
+    margin-left: auto;
+    text-decoration: underline;
+    font-size: small;
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+#change-button:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+
+
